@@ -1,0 +1,2 @@
+cat test_30_FORMATTED_sorted.txt | awk -F "\t" '{ if ($4 != -1) print $3}' | sort | uniq > test_30_unique.txt 
+cat train_70_FORMATTED_sorted.txt | awk -F "\t" '{ if ($4 != -1) print $3}' | sort | uniq > train_70_unique.txt 
